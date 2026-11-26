@@ -1,0 +1,2 @@
+[functions.icfl-webhook]
+verify_jwt = false

@@ -1,0 +1,44 @@
+import { teamLogo, type Team } from './types'
+
+export { teamLogo }
+export type { Team }
+
+export const DEFAULT_TEAMS: Omit<Team, 'id'>[] = [
+  { name: 'Arizona Cardinals', abbreviation: 'ARI', emoji: '🐦‍⬛', logo_url: 'https://upload.wikimedia.org/wikipedia/en/f/fa/Arizona_Cardinals_logo.svg', conference: 'NFC', division: 'West', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Atlanta Falcons', abbreviation: 'ATL', emoji: '🦅', logo_url: 'https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Falcons_logo.svg', conference: 'NFC', division: 'South', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Baltimore Ravens', abbreviation: 'BAL', emoji: '🐦', logo_url: 'https://upload.wikimedia.org/wikipedia/en/5/56/Baltimore_Ravens_logo.svg', conference: 'AFC', division: 'North', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Buffalo Bills', abbreviation: 'BUF', emoji: '🐃', logo_url: 'https://upload.wikimedia.org/wikipedia/en/6/60/Buffalo_Bills_logo.svg', conference: 'AFC', division: 'East', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Carolina Panthers', abbreviation: 'CAR', emoji: '🐆', logo_url: 'https://upload.wikimedia.org/wikipedia/en/e/e6/Carolina_Panthers_logo.svg', conference: 'NFC', division: 'South', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Chicago Bears', abbreviation: 'CHI', emoji: '🐻', logo_url: 'https://upload.wikimedia.org/wikipedia/en/0/03/Chicago_Bears_logo.svg', conference: 'NFC', division: 'North', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Cincinnati Bengals', abbreviation: 'CIN', emoji: '🐯', logo_url: 'https://upload.wikimedia.org/wikipedia/en/2/26/Cincinnati_Bengals_logo.svg', conference: 'AFC', division: 'North', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Cleveland Browns', abbreviation: 'CLE', emoji: '🟠', logo_url: 'https://upload.wikimedia.org/wikipedia/en/9/94/Cleveland_Browns_logo.svg', conference: 'AFC', division: 'North', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Dallas Cowboys', abbreviation: 'DAL', emoji: '⭐', logo_url: 'https://upload.wikimedia.org/wikipedia/en/7/77/Dallas_Cowboys_logo.svg', conference: 'NFC', division: 'East', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Denver Broncos', abbreviation: 'DEN', emoji: '🐴', logo_url: 'https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg', conference: 'AFC', division: 'West', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Detroit Lions', abbreviation: 'DET', emoji: '🦁', logo_url: 'https://upload.wikimedia.org/wikipedia/en/2/2c/Detroit_Lions_logo.svg', conference: 'NFC', division: 'North', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Green Bay Packers', abbreviation: 'GB', emoji: '🟢', logo_url: 'https://upload.wikimedia.org/wikipedia/en/4/44/Green_Bay_Packers_logo.svg', conference: 'NFC', division: 'North', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Houston Texans', abbreviation: 'HOU', emoji: '🐂', logo_url: 'https://upload.wikimedia.org/wikipedia/en/2/28/Houston_Texans_logo.svg', conference: 'AFC', division: 'South', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Indianapolis Colts', abbreviation: 'IND', emoji: '🐎', logo_url: 'https://upload.wikimedia.org/wikipedia/en/0/05/Indianapolis_Colts_logo.svg', conference: 'AFC', division: 'South', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Jacksonville Jaguars', abbreviation: 'JAX', emoji: '🐆', logo_url: 'https://upload.wikimedia.org/wikipedia/en/5/5b/Jacksonville_Jaguars_logo.svg', conference: 'AFC', division: 'South', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Kansas City Chiefs', abbreviation: 'KC', emoji: '🔴', logo_url: 'https://upload.wikimedia.org/wikipedia/en/e/e1/Kansas_City_Chiefs_logo.svg', conference: 'AFC', division: 'West', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Las Vegas Raiders', abbreviation: 'LV', emoji: '🏴‍☠️', logo_url: 'https://upload.wikimedia.org/wikipedia/en/8/8d/Las_Vegas_Raiders_logo.svg', conference: 'AFC', division: 'West', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Los Angeles Chargers', abbreviation: 'LAC', emoji: '⚡', logo_url: 'https://upload.wikimedia.org/wikipedia/en/5/5c/Los_Angeles_Chargers_logo.svg', conference: 'AFC', division: 'West', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Los Angeles Rams', abbreviation: 'LAR', emoji: '🐏', logo_url: 'https://upload.wikimedia.org/wikipedia/en/a/a4/Los_Angeles_Rams_logo.svg', conference: 'NFC', division: 'West', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Miami Dolphins', abbreviation: 'MIA', emoji: '🐬', logo_url: 'https://upload.wikimedia.org/wikipedia/en/3/31/Miami_Dolphins_logo.svg', conference: 'AFC', division: 'East', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Minnesota Vikings', abbreviation: 'MIN', emoji: '🌊', logo_url: 'https://upload.wikimedia.org/wikipedia/en/4/47/Minnesota_Vikings_logo.svg', conference: 'NFC', division: 'North', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'New England Patriots', abbreviation: 'NE', emoji: '🇺🇸', logo_url: 'https://upload.wikimedia.org/wikipedia/en/9/9a/New_England_Patriots_logo.svg', conference: 'AFC', division: 'East', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'New Orleans Saints', abbreviation: 'NO', emoji: '⚜️', logo_url: 'https://upload.wikimedia.org/wikipedia/en/8/84/New_Orleans_Saints_logo.svg', conference: 'NFC', division: 'South', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'New York Giants', abbreviation: 'NYG', emoji: '🔵', logo_url: 'https://upload.wikimedia.org/wikipedia/en/6/60/New_York_Giants_logo.svg', conference: 'NFC', division: 'East', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'New York Jets', abbreviation: 'NYJ', emoji: '✈️', logo_url: 'https://upload.wikimedia.org/wikipedia/en/6/6e/New_York_Jets_logo.svg', conference: 'AFC', division: 'East', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Philadelphia Eagles', abbreviation: 'PHI', emoji: '🦅', logo_url: 'https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_Eagles_logo.svg', conference: 'NFC', division: 'East', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Pittsburgh Steelers', abbreviation: 'PIT', emoji: '⚒️', logo_url: 'https://upload.wikimedia.org/wikipedia/en/8/81/Pittsburgh_Steelers_logo.svg', conference: 'AFC', division: 'North', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'San Francisco 49ers', abbreviation: 'SF', emoji: '⛏️', logo_url: 'https://upload.wikimedia.org/wikipedia/en/f/f7/San_Francisco_49ers_logo.svg', conference: 'NFC', division: 'West', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Seattle Seahawks', abbreviation: 'SEA', emoji: '🦅', logo_url: 'https://upload.wikimedia.org/wikipedia/en/e/e0/Seattle_Seahawks_logo.svg', conference: 'NFC', division: 'West', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Tampa Bay Buccaneers', abbreviation: 'TB', emoji: '🏴‍☠️', logo_url: 'https://upload.wikimedia.org/wikipedia/en/a/a2/Tampa_Bay_Buccaneers_logo.svg', conference: 'NFC', division: 'South', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Tennessee Titans', abbreviation: 'TEN', emoji: '⚔️', logo_url: 'https://upload.wikimedia.org/wikipedia/en/c/c1/Tennessee_Titans_logo.svg', conference: 'AFC', division: 'South', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+  { name: 'Washington Commanders', abbreviation: 'WAS', emoji: '🪶', logo_url: 'https://upload.wikimedia.org/wikipedia/en/3/34/Washington_Commanders_logo.svg', conference: 'NFC', division: 'East', wins: 0, losses: 0, ties: 0, points_for: 0, points_against: 0, streak: '' },
+]
+
+export function abbrToTeam(teams: Team[], abbr: string): Team | undefined {
+  const a = abbr.trim().toUpperCase()
+  return teams.find((t) => t.abbreviation.toUpperCase() === a || t.name.toUpperCase() === a)
+}
